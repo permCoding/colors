@@ -62,7 +62,7 @@ function gen_color(){
 
 var print_table = function (size){
 	dw = document.body.clientWidth // Ширина браузера
-	w_cell = (dw*0.5/size)|0;
+	w_cell = (dw*0.6/size)|0;
     document.write("<table id=pole class=pole align=center>");
     for (i = 0; i < size; i++) {       
 		document.write("<tr>");
