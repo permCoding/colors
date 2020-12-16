@@ -62,7 +62,7 @@ function gen_color(){
 
 var print_table = function (size){
 	dw = document.body.clientWidth // Ширина браузера
-	w_cell = (dw*0.55/size)|0;
+	w_cell = (dw*0.5/size)|0;
     document.write("<table id=pole class=pole align=center>");
     for (i = 0; i < size; i++) {       
 		document.write("<tr>");
@@ -82,4 +82,8 @@ function next_page(){
 	nextNum = (size + 1).toString(10);
 	nextSdvig = sdvig_min.toString(10);
 	document.location = "index.html?params=" + nextNum + "=" + nextSdvig;
+}
+
+function reset_page(){
+	document.location = "index.html";
 }

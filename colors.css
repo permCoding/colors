@@ -5,6 +5,18 @@ table.pole
 td
 	{color: #555; font-family: Tahoma; font-size: 20px; text-align: center;}
 
+input {
+	width: 18em;
+	font-family: 'Comic Sans MS';
+	font-size: 24pt;
+	font-weight: bold;
+	text-align: center;
+}
+input.btn {
+	height: 3em;
+	color: #0000AA;
+}
+
 div{text-align: center;}
 div.hi
 	{color: #274; font-family: Georgia; font-size: 32px;}
