@@ -8,19 +8,23 @@
 	<script type="text/javascript" src="colors.js"></script>
 </head>	
 
-<body onload="start_page()">
+<body onload="fill_table()">
 <center>
 	<br><br>
 	<table align=center width=700>
 		<tr>
 			<td>
 				<script>
-					var paramValue = 3; // размерность таблицы
-					row = paramValue;
-					col = paramValue;
-					print_table(row, col);
+					var zagol = window.location.href; // взять заголовок из адресной строки	
+					var params = zagol.split("?")[1]; // разделить на массив по символу ? и взять элемент с индексом 1
+					var size = 2; // начальная размерность таблицы
+					var sdvig_min = 15; // нижняя граница сдвига
+					if (typeof params != "undefined"){
+						size = parseInt(params.split("=")[1]); // взять из заголовка
+						sdvig_min = parseInt(params.split("=")[2]); // взять из заголовка
+					}					
+					print_table(size);
 				</script>
-				<br>
 			</td>
 		</tr>
  	</table>
