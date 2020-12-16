@@ -24,7 +24,7 @@ function fill_table(){
 function printColor(posX, posY){
 	ugadal = (posX==pos_x && posY==pos_y);
 	d_sdv = 1 + (sdvig-6)/10|0;	if (d_sdv<1) d_sdv = 1;
-	sdvig += ugadal ? -d_sdv: 2*d_sdv;
+	sdvig += ugadal ? -d_sdv: 3*d_sdv;
 	if (sdvig<1) sdvig = 1;	if (sdvig>120) sdvig=120;	
 	
 	document.getElementById('pole').style.backgroundColor = ugadal ? '#afa': '#f33';
