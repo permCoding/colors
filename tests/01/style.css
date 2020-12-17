@@ -14,3 +14,23 @@ div.left {
     color: rgb(35, 97, 73);
     text-align: left;
 }
+
+p {
+    padding-left: 80px;
+    padding-right: 80px;
+    text-indent: 50px;
+    text-align: justify;
+}
+p.title {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    color: #45343A;
+}
+p.label {
+    padding-left: 80px;
+    padding-right: 80px;
+    text-indent: 50px;
+    text-align: right;
+    color: navy;
+}
