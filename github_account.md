@@ -5,7 +5,7 @@
 
 Шаг 2  
 Пройти регистрацию  
-![]()  
+![](https://github.com/permCoding/colors/blob/main/images/git1.png)  
 
 
 Шаг 3  
