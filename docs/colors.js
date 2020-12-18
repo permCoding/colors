@@ -1,8 +1,8 @@
 ﻿arr_td = [0, 0, 0];
 arr_tx = [0, 0, 0];
 
-sdvig = 90; // текущее значение
-d_sdv = 5; // шаг сдвига
+sdvig = 85; // текущее значение
+d_sdv = 6; // шаг сдвига
 
 var pos;
 var pos_x;
@@ -19,11 +19,12 @@ function fill_table(){
 		id_num = 'td_' + i.toString();
 		document.getElementById(id_num).style.backgroundColor = (i==pos)? color_tx: color_td;
 	}
+	document.getElementById("num").innerHTML = sdvig.toString() + "/" + sdvig_min.toString();
 }
 
 function printColor(posX, posY){
 	ugadal = (posX==pos_x && posY==pos_y);
-	d_sdv = 1 + (sdvig-6)/10|0;	if (d_sdv<1) d_sdv = 1;
+	d_sdv = 1 + sdvig/10|0;
 	sdvig += ugadal ? -d_sdv: 3*d_sdv;
 	if (sdvig<1) sdvig = 1;	if (sdvig>120) sdvig=120;
 
@@ -62,7 +63,7 @@ function gen_color(){
 
 var print_table = function (size){
 	dw = document.body.clientWidth // Ширина браузера
-	w_cell = (dw*0.45/size)|0;
+	w_cell = (dw*0.42/size)|0;
     document.write("<table id=pole class=pole align=center>");
     for (i = 0; i < size; i++) {       
 		document.write("<tr>");
