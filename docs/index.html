@@ -22,7 +22,7 @@
 					var zagol = window.location.href; // взять заголовок из адресной строки	
 					var params = zagol.split("?")[1]; // разделить на массив по символу ? и взять элемент с индексом 1
 					var size = 2; // начальная размерность таблицы
-					var sdvig_min = 12; // нижняя граница сдвига
+					var sdvig_min = 14; // нижняя граница сдвига
 					if (typeof params != "undefined"){
 						size = parseInt(params.split("=")[1]); // взять из заголовка
 						sdvig_min = parseInt(params.split("=")[2]); // взять из заголовка
@@ -35,7 +35,7 @@
 			<td>
 				<br>
 				<div class=hi>Найди клетку с особенным цветом</div>
-				<div class=lowi>попробуй дойти и пройти доску 10х10</div>
+				<div class=lowi>попробуй дойти до размера 10х10</div>
 			</td>
 		</tr>
 		<tr>

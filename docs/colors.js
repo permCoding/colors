@@ -1,7 +1,7 @@
 ﻿arr_td = [0, 0, 0];
 arr_tx = [0, 0, 0];
 
-sdvig = 85; // текущее значение
+sdvig = 100; // текущее значение
 d_sdv = 6; // шаг сдвига
 
 var pos;
@@ -79,7 +79,7 @@ var print_table = function (size){
 }
 
 function next_page(){
-	sdvig_min -= 2;	if (sdvig_min < 3) sdvig_min = 3;
+	sdvig_min -= (1 + sdvig_min/11|0);	if (sdvig_min < 3) sdvig_min = 3;
 	nextNum = (size + 1).toString(10);
 	nextSdvig = sdvig_min.toString(10);
 	document.location = "index.html?params=" + nextNum + "=" + nextSdvig;
