@@ -1,7 +1,7 @@
 ﻿arr_td = [0, 0, 0];
 arr_tx = [0, 0, 0];
 
-sdvig = 100; // текущее значение
+sdvig = 90; // текущее значение
 d_sdv = 5; // шаг сдвига
 
 var pos;
@@ -25,8 +25,8 @@ function printColor(posX, posY){
 	ugadal = (posX==pos_x && posY==pos_y);
 	d_sdv = 1 + (sdvig-6)/10|0;	if (d_sdv<1) d_sdv = 1;
 	sdvig += ugadal ? -d_sdv: 3*d_sdv;
-	if (sdvig<1) sdvig = 1;	if (sdvig>120) sdvig=120;	
-	
+	if (sdvig<1) sdvig = 1;	if (sdvig>120) sdvig=120;
+
 	document.getElementById('pole').style.backgroundColor = ugadal ? '#afa': '#f33';
 	if (sdvig < sdvig_min)
 		next_page();
