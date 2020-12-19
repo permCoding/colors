@@ -4,6 +4,10 @@ https://permcoding.github.io/colors/
 
 ---  
 
+[Запись видеоурока](https://bbb5.psaa.ru/playback/presentation/2.0/playback.html?meetingId=d01835ffe20846ea42ee26be104a852ca5339338-1608360783060)  
+
+---  
+
 ## Современные инструменты программиста  
 
 ***Программист:***  
